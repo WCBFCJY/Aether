@@ -1,0 +1,11 @@
+services:
+  aether:
+    image: ghcr.io/wcbfcjy/aether:latest
+    container_name: Aether
+    ports:
+      - "8000:8000"
+    volumes:
+      - /data:/app
+    environment:
+      - PROXY=socks5://user:pass@ip:port
+    restart: unless-stopped
