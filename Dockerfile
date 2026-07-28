@@ -13,6 +13,4 @@ RUN pip install --no-cache-dir --no-warn-script-location -r requirements.txt
 
 RUN pip install --no-cache-dir --no-warn-script-location uvloop
 
-EXPOSE 8000
-
 CMD ["python", "-u", "init.py"]
