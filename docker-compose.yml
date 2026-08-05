@@ -2,6 +2,7 @@ services:
   aether:
     image: ghcr.io/wcbfcjy/aether:latest
     container_name: Aether
+    init: true
     ports:
       - "8000:8000"
     volumes:
